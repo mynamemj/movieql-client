@@ -14,8 +14,10 @@ class App extends Component {
     return (
       <ApolloProvider client={client}>
         <Router>
+          <main>
             <Route exact={true} path={"/"} component={Home}/>
-            <Route path={"/details/:movidId"} component={Details}/>
+            <Route path={"/details/:movieId"} component={Details}/>
+          </main>
         </Router>
       </ApolloProvider>
     );
